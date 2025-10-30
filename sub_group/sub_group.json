@@ -1,0 +1,92 @@
+{
+  "doctype": "DocType",
+  "name": "Sub Group",
+  "module": "Education",
+  "autoname": "field:sub_group_name",
+  "fields": [
+    {
+      "fieldname": "parent_group",
+      "label": "Parent Group",
+      "fieldtype": "Link",
+      "options": "Student Group",
+      "reqd": 1
+    },
+    {
+      "fieldname": "sub_group_name",
+      "label": "Sub Group Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "sub_branch",
+      "label": "Sub Branch",
+      "fieldtype": "Link",
+      "options": "Branch"
+    },
+    {
+      "fieldname": "program",
+      "label": "Program",
+      "fieldtype": "Link",
+      "options": "Program"
+    },
+    {
+      "fieldname": "course",
+      "label": "Course",
+      "fieldtype": "Link",
+      "options": "Course"
+    },
+    {
+      "fieldname": "instructor",
+      "label": "Instructor",
+      "fieldtype": "Link",
+      "options": "Instructor"
+    },
+    {
+      "fieldname": "academic_year",
+      "label": "Academic Year",
+      "fieldtype": "Link",
+      "options": "Academic Year"
+    },
+    {
+      "fieldname": "academic_term",
+      "label": "Academic Term",
+      "fieldtype": "Link",
+      "options": "Academic Term"
+    },
+    {
+      "fieldname": "group_type",
+      "label": "Group Type",
+      "fieldtype": "Select",
+      "options": "Core\nElective"
+    },
+    {
+      "fieldtype": "Section Break",
+      "fieldname": "section_break"
+    },
+    {
+      "fieldname": "students",
+      "label": "Students",
+      "fieldtype": "Table",
+      "options": "Student Group Student"
+    },
+    {
+      "fieldname": "instructors",
+      "label": "Instructors",
+      "fieldtype": "Table",
+      "options": "Student Group Instructor"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "Academic Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academics User",
+      "read": 1
+    }
+  ]
+}
