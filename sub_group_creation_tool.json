@@ -1,0 +1,107 @@
+{
+  "doctype": "DocType",
+  "name": "Sub Group Creation Tool",
+  "module": "Education",
+  "istable": 0,
+  "issingle": 1,
+  "beta": 1,
+  "track_changes": 1,
+  "permissions": [
+    {
+      "role": "Education Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "fields": [
+    {
+      "fieldname": "main_group",
+      "label": "Main Group",
+      "fieldtype": "Link",
+      "options": "Student Group",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sub_branch",
+      "label": "Sub Branch",
+      "fieldtype": "Link",
+      "options": "Student Batch Name",
+      "in_list_view": 0
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "program",
+      "label": "Program",
+      "fieldtype": "Link",
+      "options": "Program",
+      "read_only": 1
+    },
+    {
+      "fieldname": "course",
+      "label": "Course",
+      "fieldtype": "Link",
+      "options": "Course"
+    },
+    {
+      "fieldname": "instructor",
+      "label": "Instructor",
+      "fieldtype": "Link",
+      "options": "Instructor"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "academic_year",
+      "label": "Academic Year",
+      "fieldtype": "Link",
+      "options": "Academic Year",
+      "read_only": 1
+    },
+    {
+      "fieldname": "academic_term",
+      "label": "Academic Term",
+      "fieldtype": "Link",
+      "options": "Academic Term",
+      "read_only": 1
+    },
+    {
+      "fieldname": "group_type",
+      "label": "Group Type",
+      "fieldtype": "Select",
+      "options": "Course\nBatch",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_3",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "get_students_btn",
+      "label": "Get Students",
+      "fieldtype": "Button"
+    },
+    {
+      "fieldname": "clear_students_btn",
+      "label": "Clear Students",
+      "fieldtype": "Button"
+    },
+    {
+      "fieldname": "section_break_1",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "students",
+      "label": "Students",
+      "fieldtype": "Table",
+      "options": "Student Group Student",
+      "reqd": 0
+    }
+  ]
+}
